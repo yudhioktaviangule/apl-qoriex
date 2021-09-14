@@ -40,7 +40,7 @@
                                 <td>{{ $value->harga_transaksi }}</td>
                                 <td>{{ $value->qty }}</td>
                                 <td class='text-right row'>
-                                   @if($value->status_transaksi==='n')
+                                   @if($value->status_transaksi==='n' && $value->pelanggan_id===1)
                                         <a href="{{route('transaksi.approve',['id'=>$value->id])}}" class="btn btn-primary btn-sm">Approve</a>
                                    @else
                                         Approved
