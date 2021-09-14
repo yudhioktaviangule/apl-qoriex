@@ -3,10 +3,7 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-6">
-                    <a href="{{route('product.create')}}" class="btn btn-sm btn-primary">ADD</a>
-    
-                </div>
+                
                 <div class="col-md-6">
                     <form action="">
                         <div class="input-group mb-3">
