@@ -346,13 +346,16 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="#" onclick="logout()">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
+
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    </form>
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('vendor/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
@@ -372,6 +375,9 @@
                     <input type='hidden' name='_method' value='delete'>
                 `)
             }, 1);
+            window.logout=()=>{
+                $("#logout-form").submit()
+            }
         })
     </script>
     @yield("custom-script")
