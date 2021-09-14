@@ -43,7 +43,7 @@
                                    @if($value->status_transaksi==='n' && $value->pelanggan_id!==1)
                                         <a href="{{route('transaksi.approve',['id'=>$value->id])}}" class="btn btn-primary btn-sm">Approve</a>
                                    @else
-                                        Approved
+                                        Approve Tidak Tersedia
                                    @endif
                                 </td>
                             </tr>
