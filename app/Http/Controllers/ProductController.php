@@ -121,8 +121,9 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $data = Produk::find($id);
+        $pathupload = env("UPLOAD_PATH","img");
         if($data!=NULL):
-            unlink(base_path()."/../img/".$data->gambar);
+            unlink(base_path()."/../{$pathupload}/".$data->gambar);
             $data->delete();
         endif;
         return redirect(route('product.index'));
