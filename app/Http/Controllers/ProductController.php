@@ -57,7 +57,8 @@ class ProductController extends Controller
         $data = Produk::find($id);
         $data->gambar = $https;
         $data->save();
-        $file->move(base_path()."/../img",$fileName);
+        $pathupload = env("UPLOAD_PATH","img");
+        $file->move(base_path()."/../{$pathupload}",$fileName);
         return redirect(route('product.index'));
     }
 
