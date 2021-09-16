@@ -16,6 +16,13 @@ class Produk extends Model
         'kategori_id',
         'stok',
         'inisial',
+        'kamera_depan',
+        'kamera_belakang',
+        'layar',
+        'cpu',
+        'gpu',
+        'simcard',
+        'battery',
     ];
 
     public function getKategori()

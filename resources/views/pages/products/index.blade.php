@@ -9,6 +9,8 @@
                         <tr>
                             <th>Tipe</th>
                             <th>Merk</th>
+                            <th colspan="6">Desksripsi</th>
+                            <th>Stok</th>
                             <th>Harga</th>
                             <th>Aksi</th>
                         </tr>
@@ -18,6 +20,13 @@
                             <tr>
                                 <td>{{ $value->name }}</td>
                                 <td>{{ $value->getKategori()->name}}</td>
+                                <td>{{ $value->kamera_depan }}/{{ $value->kamera_belakang }}</td>
+                                <td>{{ $value->layar }}</td>
+                                <td>{{ $value->cpu }}</td>
+                                <td>{{ $value->gpu }}</td>
+                                <td>{{ $value->battery }}</td>
+                                <td>{{ $value->simcard }}</td>
+                                <td>{{ $value->stok }}</td>
                                 <td>{{ $value->harga }}</td>
                                 <td class='text-right row'>
                                     <a href="{{route('product.show',['product'=>$value->id])}}" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></a>

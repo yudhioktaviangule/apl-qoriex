@@ -48,6 +48,14 @@ class ProductController extends Controller
         $data->harga = $post->harga;
         $data->inisial = $post->inisial;
         $data->kategori_id = $post->kategori_id;
+        $data->kamera_depan = $post->kamera_depan;
+        $data->kamera_belakang = $post->kamera_belakang;
+        $data->layar = $post->layar;
+        $data->simcard = $post->simcard;
+        $data->cpu = $post->cpu;
+        $data->gpu = $post->gpu;
+        $data->stok = $post->stok;
+        $data->battery = $post->battery;
         $data->ram = $post->ram." GB";
         $data->memori = $post->memori." GB";
         $data->save();

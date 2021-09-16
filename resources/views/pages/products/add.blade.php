@@ -35,8 +35,36 @@
                         <input required type="number" class="form-control" name="harga" placeholder="Input Harga">
                     </div>
                     <div class="mb-3">
+                        <label required for="">Kamera Depan</label>
+                        <input required type="text" class="form-control" name="kamera_depan" placeholder="Kamera Depan">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Kamera Belakang</label>
+                        <input required type="text" class="form-control" name="kamera_belakang" placeholder="Kamera Belakang">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Layar</label>
+                        <input required type="text" class="form-control" name="layar" placeholder="Layar">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">CPU</label>
+                        <input required type="text" class="form-control" name="cpu" placeholder="CPU">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">GPU</label>
+                        <input required type="text" class="form-control" name="gpu" placeholder="GPU">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Battery</label>
+                        <input required type="text" class="form-control" name="battery" placeholder="Battery">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Simcard dan Jaringan</label>
+                        <input required type="text" class="form-control" name="simcard" placeholder="Simcard">
+                    </div>
+                    <div class="mb-3">
                         <label required for="">Stok</label>
-                        <input required type="number" class="form-control" name="stok" placeholder="Input Harga">
+                        <input required type="number" class="form-control" name="stok" placeholder="Stock">
                     </div>
                     <div class="mb-3">
                         <label required for="">Foto</label>
