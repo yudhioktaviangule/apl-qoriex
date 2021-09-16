@@ -38,6 +38,22 @@
                                 <label for="">Storage</label>
                                 <div class="form-control">{{$data->memori}}</div>
                             </p>
+                            <p>
+                                <label for="">Kamera</label>
+                                <div class="form-control">{{$data->kamera_depan}}/{{$data->kamera_belakang}}</div>
+                            </p>
+                            <p>
+                                <label for="">Layar</label>
+                                <div class="form-control">{{$data->layar}}</div>
+                            </p>
+                            <p>
+                                <label for="">CPU / GPU</label>
+                                <div class="form-control">CPU : {{$data->cpu}} / GPU :{{ $data->gpu }}</div>
+                            </p>
+                            <p>
+                                <label for="">Battery</label>
+                                <div class="form-control">{{$data->battery}}</div>
+                            </p>
     
                         </div>
                         <div class="col-md-6 col-12">

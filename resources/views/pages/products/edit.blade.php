@@ -37,6 +37,35 @@
                         <label required for="">Harga</label>
                         <input type="number" class="form-control" name="harga" placeholder="Input Harga" value="{{$data->harga}}">
                     </div>
+
+                    <div class="mb-3">
+                        <label required for="">Kamera Depan</label>
+                        <input required type="text" class="form-control" name="kamera_depan" placeholder="Kamera Depan" value="{{$data->kamera_depan}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Kamera Belakang</label>
+                        <input required type="text" class="form-control" name="kamera_belakang" placeholder="Kamera Belakang" value="{{$data->kamera_belakang}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Layar</label>
+                        <input required type="text" class="form-control" name="layar" placeholder="Layar" value="{{$data->layar}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">CPU</label>
+                        <input required type="text" class="form-control" name="cpu" placeholder="CPU" value="{{$value->cpu}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">GPU</label>
+                        <input required type="text" class="form-control" name="gpu" placeholder="GPU" value="{{$value->gpu}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Battery</label>
+                        <input required type="text" class="form-control" name="battery" placeholder="Battery" value="{{$value->battery}}">
+                    </div>
+                    <div class="mb-3">
+                        <label required for="">Simcard dan Jaringan</label>
+                        <input required type="text" class="form-control" name="simcard" placeholder="Simcard" value="{{$value->simcard}}">
+                    </div>                    
                     <div class="mb-3">
                         <label required for="">Stok</label>
                         <input type="number" class="form-control" name="stok" placeholder="Input Stok" value="{{$data->stok}}">
