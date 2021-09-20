@@ -24,6 +24,7 @@
                             <th>Type Handphone</th>
                             <th>Pelanggan</th>
                             <th>Telepon</th>
+                            <th>Alamat</th>
                             <th>Harga</th>
                             <th>Jumlah Beli</th>
                             <th>Aksi</th>
@@ -36,6 +37,7 @@
                                 <td>{{ $value->getProduct()->name}}</td>
                                 <td>{{ $value->getPelanggan()->name}}</td>
                                 <td>{{ $value->getPelanggan()->telepon}}</td>
+                                <td>{{ $value->getPelanggan()->alamat}}</td>
                                 <td>{{ $value->harga_transaksi }}</td>
                                 <td>{{ $value->qty }}</td>
                                 <td class='text-right row'>
